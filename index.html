@@ -13,13 +13,15 @@
 </head>
 <body>
 
-    <header class="cabecalho">
+    <button class="voltar" onclick="scrollToTop()">Voltar ao Topo</button>
+
+    <header class="cabecalho" id="cabecalho">
         <div class="img">
             <img src="/assets/logo.png" alt="">
         </div>
         <nav class="links-nav">
             <a href="#sobre">Sobre</a>
-            <a href="#especialidades">Especialidades</a>
+            <a href="/src/view/especialidades.html">Especialidades</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
@@ -31,7 +33,7 @@
         </div>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="texto-sobre">
             <h2><span class="cor-cinza">Sobre a clínica</span></h2>
             <p>Nossa clínica está pronta para receber nossos pacientes através de uma excelente estrutura, comodidade e com a segurança que vocês precisam</p>
@@ -87,7 +89,7 @@
 
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <h3>Contato</h3>
         <p>Nossa clínica médica está aberta de <b>segunda à sábado das 6:00 às 21:00</b></p><br>
         <p>Através do telefone/Whatsapp <b>(31) 9 9999-9999</b> você pode fazer o agendamento de consultas e exames</p><br>
@@ -102,6 +104,15 @@
         <img src="/assets/logo.png" alt="">
         <p>&copy Desenvolvido por Yuji Ohasi</p>
     </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 </html>
